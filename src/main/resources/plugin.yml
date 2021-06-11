@@ -1,0 +1,9 @@
+name: SimpleCommandHandlers
+main: com.cloudflame.sch.SimpleCommandHandler
+api: 1.0.0
+version: 1.1.0
+author: CloudFlame Inc
+
+commands:
+  abc:
+    description: sadwd
