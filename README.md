@@ -6,10 +6,10 @@ Nukkit плагин. Это API, которое позволяет регист�
 SimpleCommandHandler.getInstance().setPluginCommandHandler(this, "abc", (sender, args) -> {
             getLogger().error("PLUGIN OK");
             return false;
-        });
+});
 
-        SimpleCommandHandler.getInstance().registerNewCommand("test", (sender, args) -> {
+SimpleCommandHandler.getInstance().registerNewCommand("test", (sender, args) -> {
             getLogger().error("OK");
             return false;
-        });
+});
 ```
