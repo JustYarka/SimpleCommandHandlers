@@ -13,17 +13,6 @@ public class SimpleCommandHandler extends PluginBase {
     @Override
     public void onEnable() {
         instance = this;
-
-
-        SimpleCommandHandler.getInstance().setPluginCommandHandler(this, "abc", (sender, args) -> {
-            getLogger().error("PLUGIN OK");
-            return false;
-        });
-
-        SimpleCommandHandler.getInstance().registerNewCommand("test", (sender, args) -> {
-            getLogger().error("OK");
-            return false;
-        });
     }
 
     public void setPluginCommandHandler(PluginBase plugin, String command, HandlerInstance<CommandSender, String[], Boolean> handler) {
